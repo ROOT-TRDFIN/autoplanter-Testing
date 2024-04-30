@@ -1,0 +1,498 @@
+/* Namari Landing Page Dynamic Style Index
+
+1. Website Default Styling
+2. Navigation
+3. Primary and Secondary Colors
+4. Banner
+5. Typography
+6. Buttons
+7. Footer
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 1. Website Default Styling */
+/*------------------------------------------------------------------------------------------*/
+
+
+body {
+    background:#fff;
+    box-sizing: border-box;
+}
+
+
+/* Default Link Color */
+
+a, .la-ball-triangle-path {
+    color:#d2b356;
+}
+
+a:hover, #header.nav-solid nav a:hover {
+    color:#d2b356;
+}
+
+/* Default Icon Color */
+
+.icon i {
+    color:#d2b356;
+}
+
+/* Border Color */
+
+#banner .section-heading:before, .testimonial.classic footer:before {
+    background: #d2b356;
+}
+
+.pricing-block-content:hover {
+    border-color:#d2b356;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 2. Navigation */
+/*------------------------------------------------------------------------------------------*/
+
+
+/* Transparent Navigation Color on a Banner */
+
+#header nav a, #header i {
+    color:#111;
+}
+
+
+/* Navigation Colors when the Navigation is sticky and solid */ 
+
+#header.nav-solid, #header.nav-solid a, #header.nav-solid i, #nav-mobile ul li a {
+    color:#333;
+}
+
+
+/* Navigation Active State */
+
+#header.nav-solid .active {
+    color: #d2b356;
+    border-color: #d2b356;
+}    
+
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 3. Primary and Secondary Colors */
+/*------------------------------------------------------------------------------------------*/
+
+
+/* Primary Background and Text Colors */
+
+.primary-color, .featured .pricing {
+    background-color:#d2b356;
+}
+
+.primary-color, .primary-color .section-title, .primary-color .section-subtitle, .featured .pricing, .featured .pricing p {
+    color:#fff;    
+}
+
+.section-heading h2:after {
+    background:#d2b356;
+    content:"";
+    display:block;
+    width:30px;
+    height:5px;
+    margin-top:30px;
+}
+
+.text-center .section-heading h2:after {
+       margin: 30px auto 25px auto;
+}
+
+/* Primary Icon Colors */
+
+.primary-color .icon i, .primary-color i {
+    color:#fff;
+}
+
+
+/* Secondary Background and Text Colors */
+
+.secondary-color {
+    background-color:#f5f5f5;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 4. Banner */
+/*------------------------------------------------------------------------------------------*/
+
+
+/* Banner Background and Text Colors */
+
+#banner {
+    background-size:cover;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 5. Typography */
+/*------------------------------------------------------------------------------------------*/
+
+
+body {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:15px;
+    font-weight:normal;
+    color:#111;
+}
+
+/* Logo, if you are using Fonts as Logo and not image
+
+#logo h1 {
+    font-family:;
+    font-size:; 
+    font-weight:;
+    color:;
+}
+
+#logo h2 {
+    font-family:;
+    font-size:; 
+    font-weight:;
+    color:;
+}
+
+*/
+
+
+/* Banner Typography */
+
+#banner h1 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:62px;
+    line-height:60px;
+    font-weight:800;
+    color:#111;
+}
+
+#banner h2 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:18px;
+    font-weight:300;
+    color:#111;
+}
+
+
+
+
+/* Testimonial */
+
+.testimonial q {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 17px; 
+    font-weight:300;
+}
+
+.testimonial.classic q, .testimonial.classic footer {
+    color:#111;
+}
+
+
+/*contact us */
+/* mobile view paragraph & contact form*/
+@media (min-width:200px)  and (max-width:330px) {
+    #clients .row .section-heading h2{
+        padding-right: 40px !important;
+        
+    }
+    #clients .row .section-heading p{
+        padding-right: 45px !important; 
+    }
+    #clients .row .section-heading h2{
+        
+        margin-left: 0px !important ;
+        text-align: center;
+        font-size: 30px;
+        
+    }
+
+}
+
+@media (max-width:636px) {
+    #clients {
+        padding-left: 0 !important;
+    }
+
+    #clients .row .section-heading h2{
+        width: 300px !important;
+        margin-left: 30px !important ;
+        text-align: center;
+        font-size: 30px;
+    }
+    #clients .row .section-heading p{
+        width:300px;
+        margin-left: 30px !important;
+        text-align: center;
+    }
+    #clients  .row .contactus{
+        margin-left: 10px !important;
+    }
+    .contactus form {
+        width: 300px !important;
+    }
+    .contactus #name,#email,#number{
+        width: 200px !important;
+        margin-top: 10px;
+    }
+    .contactus #message {
+        width: 200px !important;
+        height: 50px;
+    }
+} 
+/* tab view paragraph & contact form */
+@media (min-width: 768px) and (max-width:1024px){
+   
+
+    #clients .row .section-heading h2{
+        width: 600px !important;
+        margin-left: 40px ;
+        text-align: center;
+        
+    }
+    #clients .row .section-heading p {
+        width:600px;
+        margin-left: 40px;
+        text-align: center;
+    }
+    #clients .row .contactus{
+        margin-left: 0px !important;
+    }
+    .contactus form {
+        width: 500px !important;
+    }
+    .contactus #name,#email,#number{
+        width: 400px !important;
+        margin-top: 10px;
+    }
+    .contactus #message {
+        width: 400px !important;
+        height: 50px;
+    }
+}
+@media (min-width:900px) and (max-width:1024px){
+    #clients .row .section-heading p {
+        width:900px;
+        margin-left: 40px;
+        text-align: center;
+    }
+    #clients .row .section-heading h2{
+        width: 900px !important;
+        margin-left: 40px ;
+        text-align: center;
+    }
+}
+#clients{
+    width: 100vw;
+
+}
+
+#clients h3 {
+    color: #d2b356;
+    
+}
+#clients .section-heading h2 {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 34px; 
+    font-weight:700;
+    color:#111;
+    
+}
+
+#clients .section-heading p {
+    width: 1200px;
+    line-height: 39px;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    color:#9c9c9c;
+}
+
+.contactus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  20px 0px;
+   
+}
+
+.contactus form {
+    padding: 20px;
+    margin: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 20px;
+    width: 600px;
+    padding-top: 40px;
+}
+.contactus #name,#email,#number{
+    width: 500px;
+    margin-top: 10px;
+}
+.contactus #message{
+    width: 500px;
+    height : 100px;
+    margin-top: 10px;
+}
+.glow {
+    display: inline-block;
+    padding: 8px 8px;
+    font-size: 14px;
+    font-weight:500;
+    color: rgb(59, 58, 58);
+    background-color:#d2b356;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 10px#d2b356;
+    animation: glow-animation 0.8s infinite alternate;
+  }
+  .glow:hover{
+     color:#d2b356;
+     background-color: #333;
+
+  }
+
+  @keyframes glow-animation {
+    from {
+      box-shadow: 0 0 10px rgb(75, 71, 71);
+    }
+    to {
+      box-shadow: 0 0 20px #d2b356;
+    }
+  }
+
+/* Standard Headings h1-h6 */
+
+h1 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 40px; 
+    font-weight:300;
+    color:#111;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 34px; 
+    font-weight:300;
+    color:#111;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 30px; 
+    font-weight:700;
+    color:#111;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 18px; 
+    font-weight:400;
+    color:#111;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 16px; 
+    font-weight:400;
+    color:#111;
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 14px; 
+    font-weight:400;
+    color:#111;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 6. Buttons */
+/*------------------------------------------------------------------------------------------*/
+
+/* ----------Default Buttons---------- */
+
+
+/* Button Text */
+
+.button, input[type="submit"]  {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:14px;
+    font-weight:bold;
+    color:#111;
+}
+
+
+/* Button Color */
+
+.button, input[type="submit"] {
+    border-color:#111;
+}
+
+
+/* Button Hover Color */
+
+.button:hover,  input[type="submit"]:hover {
+    border-color:#d2b356;
+    color:#d2b356;
+}
+
+
+/* ----------Banner Buttons---------- */
+
+
+/* Button Text */
+
+#banner .button {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:16px;
+    color:#111;
+}
+
+
+/* Button Color */
+
+#banner .button {
+    border-color:#111;
+}
+
+
+/* Button Hover Color */
+
+#banner .button:hover {
+    color:#d2b356;
+    border-color:#d2b356;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 7. Footer */
+/*------------------------------------------------------------------------------------------*/
+
+#landing-footer, #landing-footer p, #landing-footer a {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:12px;
+    font-weight:normal;
+    color:#999;
+}
+
+/* Footer Icon Color */
+
+#landing-footer i {
+    color:#999;
+}
+
