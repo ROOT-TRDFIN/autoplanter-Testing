@@ -1050,7 +1050,7 @@ textarea {
       font-size: 20px;
     }
     .information {
-      margin-top: -25px;
+      margin-top: -45px;
     }
     .info .navbar-nav {
       margin-left: -20px !important;
@@ -1060,9 +1060,9 @@ textarea {
     margin-left: 0px;
   }
   .footer-02 .footer-logo .footer-img img {
-    width: 200px !important;
-    height: 55px;
-    margin-bottom: 50px;
+    width: 210px !important;
+    height: 60px;
+    margin-bottom: 28px;
   }
   .footer-heading {
     font-size: 20px;
@@ -1072,6 +1072,7 @@ textarea {
       justify-content: center;
       width: 250px;
       margin-left: -25px;
+      padding: 0;
     }
     .footer-social-link ul {
       display: flex;
@@ -1080,6 +1081,7 @@ textarea {
       justify-content: center;
       align-items: center;
       margin-left: -35px;
+      margin-bottom: 0;
     }
     .fa-gear {
       position: absolute;
@@ -1137,7 +1139,7 @@ textarea {
       font-style: normal;
       transition: all 0.5s;
       display: inline;
-      padding: 5px 0px;
+      padding: 10px 0px;
    
     }
     .partner-wrap .contact-ul span {
