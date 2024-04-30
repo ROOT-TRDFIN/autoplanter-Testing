@@ -865,7 +865,7 @@ textarea {
   }
   .contact-us {
     padding: 0;
-    margin-top: 10px;
+    margin: 5px 0px;
   }
   .contact-us a:hover{
     color: #1877f2;
@@ -1132,6 +1132,9 @@ textarea {
       align-items: center;
       margin-top: 0px;
     }
+    .partner-wrap {
+      margin-top: -5px !important;
+    }
     .partner-wrap .contact-ul li{
       font-size: 11px;
       font-family: "Lato", sans-serif;
@@ -1144,5 +1147,9 @@ textarea {
     }
     .partner-wrap .contact-ul span {
       display:inline-block;
+    }
+    .copyright{
+      font-size: 12px;
+      height: 25px;
     }
   }
