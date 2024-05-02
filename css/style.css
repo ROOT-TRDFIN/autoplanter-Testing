@@ -458,14 +458,35 @@ textarea {
     color: #1354AE;
     background-color: transparent;
 }
+
+b {
+  color: #000;
+  font-weight: bold;
+}
+
+@media (max-width: 625px) {
+  .tab_btn {
+    margin: 5px;
+  }
+  .tab_box {
+    margin-bottom: 10px;
+  }
+}
 .tab_btn.active {
     background-color: #1354AE;
     color: white;
 }
 
+.content-box {
+  min-height: 450px;
+  margin-bottom: 15px;
+}
+
 .content-box .content {
     display: none;
     animation: moving .5s ease;
+    line-height: 30px;
+    text-align: justify;
 }
 
 @keyframes moving {
@@ -498,16 +519,17 @@ textarea {
 .prodcuts {
   max-width: 450px;
   height: 560px;
-  background-color: #1354AE;
+  background-color: #ffffff;
+  border: 1px solid #1354AE;
   border-radius: 0 0 20px 20px;
   margin: 20px;
-  color: white !important;
+  color: #1354AE !important;
   overflow: hidden;
   transition: .5s ease-in-out;
 }
 
 .prodcuts:hover {
-  background-color: #183e6f;
+  background-color: #1354AE;
 }
 
 .prodcut-img {
@@ -528,24 +550,31 @@ textarea {
 }
 
 .prodcuts:hover .prodcut-img img {
-  opacity: .3;
+  opacity: .5;
 }
 
 .prodcut-content {
   margin-left: 30px;
-  color: white !important;
+  color: #1354AE !important;
   display: flex;
   flex-wrap: wrap;
 }
 
 .prodcut-content h3 {
-  color: white !important;
+  color: #1354AE !important;
+  transition: .5s ease-in-out;
 }
 
 .prodcut-content p {
   width: 400px;
   margin-top: 10px;
   text-align: justify;
+  transition: .5s ease-in-out;
+}
+
+.prodcuts:hover .prodcut-content h3,
+.prodcuts:hover .prodcut-content p {
+  color: white !important;
 }
 
 .middle {
@@ -590,14 +619,23 @@ textarea {
   border-radius: 10px !important;
 }
 
+.about {
+  margin-top: 0 !important;
+}
+
 .about-content {
-  margin-bottom: 70px;
+  margin: 70px 0;
+  line-height: 35px;
 }
 
 @media (max-width: 991px) {
   .about-content h1 {
     margin-top: 20px;
   }
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 
@@ -1194,3 +1232,71 @@ textarea {
       height: 25px;
     }
   }
+
+
+
+  .mobile-contact {
+    display: none;
+  }
+
+  .inputBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputBox input {
+    padding: 15px 20px;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    color: #1354AE;
+    border: 1px solid #1354AE;
+    font-size: 1em;
+  }
+
+  .inputBox textarea {
+    padding: 15px 20px;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    color: #1354AE;
+    border: 1px solid #1354AE;
+    font-size: 1em;
+  }
+  
+  .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 15px 20px;
+    pointer-events: none;
+    font-size: 1em;
+    transition: 0.4s cubic-bezier(0.05, 0.81, 0, 0.93);
+    color: #1354AE;
+    letter-spacing: 0.1em;
+  }
+  
+  .inputBox input:focus ~ span,
+  .inputBox input:valid ~ span {
+    font-size: 0.7em;
+    transform: translateX(14px) translateY(-7.5px);
+    padding: 0 5px;
+    border-radius: 2px;
+    background: #edf1fc;
+    letter-spacing: 0em;
+    border: 1px solid #1354AE;
+  }
+
+  .inputBox textarea::placeholder {
+    color: #1354AE;
+  }
+
+  @media (max-width: 767px) {
+    .mobile-contact {
+      display: block;
+    }
+    .lap-contact {
+      display: none;
+    }
+  }
+  
