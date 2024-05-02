@@ -550,7 +550,8 @@ textarea {
   
   .prodcut-content p {
     font-size: 14px;
-    max-width: 290px;
+    max-width: 370px;
+    width: 300px;
   }
 }
 
