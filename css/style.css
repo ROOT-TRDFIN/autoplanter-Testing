@@ -38,6 +38,37 @@ body {
 }
 
 
+.spinner {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  color: #1354AE;
+  background: radial-gradient(farthest-side, currentColor calc(100% - 7px),#0000 calc(100% - 6px) 0);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 15px),#000 calc(100% - 13px));
+  border-radius: 50%;
+  animation: spinner-sm4bhi 2s infinite linear;
+ }
+ 
+ .spinner::before,
+ .spinner::after {
+  content: "";
+  grid-area: 1/1;
+  background: linear-gradient(currentColor 0 0) center,
+           linear-gradient(currentColor 0 0) center;
+  background-size: 100% 11px,11px 100%;
+  background-repeat: no-repeat;
+ }
+ 
+ .spinner::after {
+  transform: rotate(45deg);
+ }
+ 
+ @keyframes spinner-sm4bhi {
+  100% {
+   transform: rotate(1turn);
+  }
+ }
+
 /*** Button ***/
 .btn {
     font-weight: 600;
@@ -480,9 +511,6 @@ textarea {
 }
 
 .prodcut-img {
-  background-position: center;
-  background-size: cover;
-  object-fit: cover;
   position: relative;
   transition: .5s ease-in-out;
 }
@@ -496,6 +524,7 @@ textarea {
   width: 450px;
   height: 350px;
   transition: .5s ease-in-out;
+  object-fit: cover;
 }
 
 .prodcuts:hover .prodcut-img img {
@@ -556,6 +585,21 @@ textarea {
     width: 280px;
   }
 }
+
+.round {
+  border-radius: 10px !important;
+}
+
+.about-content {
+  margin-bottom: 70px;
+}
+
+@media (max-width: 991px) {
+  .about-content h1 {
+    margin-top: 20px;
+  }
+}
+
 
 /* Footer */
 
