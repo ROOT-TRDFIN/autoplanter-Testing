@@ -488,7 +488,7 @@ textarea {
 }
 
 .prodcuts:hover .prodcut-img {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .prodcut-img img {
@@ -505,6 +505,8 @@ textarea {
 .prodcut-content {
   margin-left: 30px;
   color: white !important;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .prodcut-content h3 {
@@ -551,7 +553,7 @@ textarea {
   .prodcut-content p {
     font-size: 14px;
     max-width: 370px;
-    width: 300px;
+    width: 280px;
   }
 }
 
