@@ -533,6 +533,26 @@ textarea {
   opacity: 1;
 }
 
+@media (max-width: 500px) {
+  .prodcuts {
+    max-width: 380px;
+    height: 490px;
+  }
+
+  .prodcut-img img {
+    height: 290px;
+  }
+
+  .prodcut-content {
+    margin-left: 10px;
+  }
+  
+  .prodcut-content p {
+    font-size: 14px;
+    width: 350px;
+  }
+}
+
 /* Footer */
 
 
