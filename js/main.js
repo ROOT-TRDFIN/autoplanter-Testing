@@ -127,3 +127,55 @@ tabs.forEach((tab, index)=> {
 // CopyRights Auto Year
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
+// Contact Form Validation
+const form = document.getElementById('form');
+const fNmae = document.getElementById('fname');
+const lName = document.getElementById('lname');
+const email = document.getElementById('email');
+const phone = document.getElementById('phone');
+
+form.addEventListener('submit', (e)=> {
+    e.preventDefault();
+    validateInputs();
+})
+
+function validateInputs() {
+    const fNameVal = fName.value.trim();
+    const lNameVal = lName.value.trim();
+    const emailValue = email.value.trim();
+    const phoneValue = phone.value.trim();
+
+    if(fNameVal==='') {
+        setError(fName,'First Name is required')
+    }
+
+    if(emailValue==='') {
+        setError(email,'Email is required')
+    } else if(!validateEmail(emailValue))
+    setError(email,'Please enter a valid email')
+
+    if (phoneValue === '') {
+        setError(phone, 'Phone number is required');
+    } else if (!/^\d+$/.test(phoneValue)) {
+        setError(phone, 'Please enter a valid phone number');
+    } else if (/\Da/.test(phoneValue)) {
+        setError(phone, 'Phone number must not contain letters or special characters');
+    }
+
+}
+
+function setError(element,message) {
+    const inputGroup = element.parentElement;
+    const errorElement = inputGroup.querySelector('.error')
+
+    errorElement.innerText = message;
+    inputGroup.classList.add('.error')
+}
+
+const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };

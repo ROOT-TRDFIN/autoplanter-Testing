@@ -132,33 +132,34 @@
                 </div>
                 <div class="col-md-6 wow fadeInUp lap-contact" data-wow-delay="0.1s">
                     <div class="bg-light p-5 h-100 d-flex align-items-center">
-                        <form action="https://api.web3forms.com/submit" method="POST">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <input type="hidden" name="access_key" value="ddc7a7c3-09f0-4ecb-8ddf-776451330e6a">
-                                    <div class="form-floating inputbox">
-                                        <input type="text" required="required">
+                                    <div class="inputbox">
+                                        <input type="text" id="fname" required="required">
                                         <span>First Name</span>
                                         <i></i>
                                     </div>
+                                    <div class="error"></div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-floating inputbox">
-                                        <input type="text" required="required">
+                                    <div class="inputbox">
+                                        <input type="text" id="lname" required="required">
                                         <span>Last Name</span>
                                         <i></i>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-floating inputbox">
-                                        <input type="tel" required="required">
+                                    <div class="inputbox">
+                                        <input type="tel" id="phone" required="required">
                                         <span>Phone</span>
                                         <i></i>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-floating inputbox">
-                                        <input type="email" required="required">
+                                    <div class="inputbox">
+                                        <input type="email" id="email" required="required">
                                         <span>Email</span>
                                         <i></i>
                                     </div>

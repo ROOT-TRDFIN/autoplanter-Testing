@@ -1477,7 +1477,7 @@ footer {
   outline: none;
   box-shadow: none;
   border: none;
-  color: #23242a;
+  color: #ffffff;
   font-size: 1em;
   letter-spacing: 0.05em;
   transition: 0.5s;
@@ -1518,5 +1518,21 @@ footer {
 .inputbox input:valid ~i,
 .inputbox input:focus ~i {
   height: 44px;
+}
+
+.error {
+  color: rgb(242, 18, 18);
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.inputbox.error i {
+  background: rgb(206, 67, 67) !important;
+}
+
+.inputbox.error input:valid ~span, 
+.inputbox.error input:focus ~span 
+{
+  color: rgb(242, 18, 18) !important;
 }
   
