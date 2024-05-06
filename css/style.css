@@ -1415,7 +1415,6 @@ footer {
   background: rgb(255,252,252);
   background: linear-gradient(180deg, rgba(255,252,252,1) 0%, rgba(19,84,174,0.891281512605042) 60%);margin-top: 50px;
   padding: 80px;
-  border-top-left-radius: 180px;
   background-color: #007bff;
 }
 
@@ -1497,8 +1496,7 @@ footer {
   footer {
     padding-top: 80px !important; 
     padding: 0;
-    height: 270px; 
-    border-top-left-radius: 120px;
+    height: 270px;
   }
   .footerNav a {
     font-size: 13px;
@@ -1519,7 +1517,6 @@ footer {
   footer {
     height: 200px;
     padding-top: 40px !important;
-    border-top-left-radius: 60px;
   } 
   .footerNav a {
     font-size: 11px;
