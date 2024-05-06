@@ -124,3 +124,6 @@ tabs.forEach((tab, index)=> {
     })
 })
 
+// CopyRights Auto Year
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
