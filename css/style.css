@@ -1519,7 +1519,7 @@ footer {
   footer {
     height: 200px;
     padding-top: 40px !important;
-    border-top-left-radius: 90px;
+    border-top-left-radius: 60px;
   } 
   .footerNav a {
     font-size: 11px;
