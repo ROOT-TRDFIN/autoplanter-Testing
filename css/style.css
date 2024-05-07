@@ -1368,11 +1368,11 @@ footer {
 
 .footerIcon {
   display: flex;
-  margin: 15px;
+  margin: 10px;
 }
 
 .footerIcon div {
-  margin: 20px;
+  margin: 10px;
   border: 1px solid white;
   width: 52px;
   height: 50px;
@@ -1397,8 +1397,8 @@ footer {
 }
 
 .twitter:hover {
-  background-color: #000;
-  border: 1px solid #000;
+  background-color: #1070dd;
+  border: 1px solid #1070dd;
 }
 
 .insta:hover {
@@ -1467,6 +1467,7 @@ footer {
 
 .inputbox {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .inputbox input {
@@ -1520,7 +1521,33 @@ footer {
   height: 44px;
 }
 
-.error {
+.name {
+  position: relative;
+}
+
+label.error {
+  font-weight: 700;
+  display: block;
+  color: #f00;
+  font-size: 14px;
+  padding-bottom: 50px;
+  position: absolute;
+  bottom: -70px;
+}
+
+@media (max-width:1220px) {
+  label.error {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  label.error {
+    bottom: -80px;
+  }
+}
+
+/* .error {
   color: rgb(242, 18, 18);
   font-size: 15px;
   margin-top: 5px;
@@ -1534,5 +1561,5 @@ footer {
 .inputbox.error input:focus ~span 
 {
   color: rgb(242, 18, 18) !important;
-}
+} */
   
