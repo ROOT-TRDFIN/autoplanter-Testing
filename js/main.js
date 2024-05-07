@@ -151,14 +151,13 @@ $("#form").validate({
     messages: {
         Fname: {
             required: "Please enter your name",
-        minlength: "Name at least 2 characters"
+            minlength: "Name at least 2 characters"
         },
         email: "Please enter your email",
         phone: "Please enter your number",
         Lname: "",
         Message: ""
     },
-
 
     submitHandler: function(form) {
       form.submit();
